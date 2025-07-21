@@ -4,7 +4,7 @@
   "main": "first.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec babel-node",
+    "dev": "nodemon --exec babel-node app.js",
     "build": "babel . -d build --ignore node_modules",
     "start": "node build/app.js"
   },
