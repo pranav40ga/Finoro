@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# dotenv
+.env
+
+# build output
+build/
+
+# misc
+.DS_Store
+*.log
