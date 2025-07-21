@@ -26,8 +26,9 @@ sequelize
   })
   .then(() => {
     console.log("✅ Models synchronized!");
-    app.listen(process.env.PORT, () =>
-      console.log(`🚀 Server running at http://localhost:${process.env.PORT}`)
+    PORT=process.env.PORT||3001;
+    app.listen(PORT, () =>
+      console.log(`🚀 Server running at http://localhost:${PORT}`)
     );
   })
   .catch((err) => console.error("❌ DB Connection Error:", err));
