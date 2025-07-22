@@ -10,8 +10,9 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD,
   {
     host: process.env.DB_HOST,
+    port:Number(process.env.DB_PORT),
     dialect: process.env.DB_DIALECT,
-    logging: false, // Disable logging for cleaner output
+    logging: false, 
     
   }
 );

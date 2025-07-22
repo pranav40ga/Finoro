@@ -47,7 +47,7 @@ const Company = sequelize.define(
     }
   },
   {
-    tableName: "company", // ✅ correct spelling
+    tableName: "companies", // ✅ correct spelling
     freezeTableName: true // optional: prevents Sequelize from pluralizing to "companies"
   }
 );

@@ -22,11 +22,11 @@ sequelize
   .authenticate()
   .then(() => {
     console.log("✅ MySQL connected!");
-    return sequelize.sync({alter:false}); // sync tables
+    return sequelize.sync(); // sync tables
   })
   .then(() => {
     console.log("✅ Models synchronized!");
-    PORT=process.env.PORT||3001;
+   const PORT=3001;
     app.listen(PORT, () =>
       console.log(`🚀 Server running at http://localhost:${PORT}`)
     );

@@ -4,7 +4,7 @@ import { fetchScreenerData, fetchCompanyRatios } from '../Utils/fmpAPIhelper.js'
 
 const seedCompanies = async () => {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync();
     const screener = await fetchScreenerData();
 
     for (const stock of screener) {
